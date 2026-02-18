@@ -1,0 +1,68 @@
+Sprint,Module,Task,Role,Priority,Notes
+Sprint 1,Project Setup,Initialize monorepo structure,SYSTEM,HIGH,Next.js + Hono API
+Sprint 1,Project Setup,Setup Supabase project,SYSTEM,HIGH,Enable RLS default deny
+Sprint 1,Project Setup,Environment configuration,SYSTEM,HIGH,Xendit + Supabase keys
+Sprint 1,Project Setup,Database migration pipeline,SYSTEM,HIGH,Versioned schema
+Sprint 1,Project Setup,Base layout & navigation,SYSTEM,HIGH,Admin UI shell
+Sprint 1,Project Setup,Global error handler,SYSTEM,HIGH,API + UI
+Sprint 1,Project Setup,Request logging middleware,SYSTEM,HIGH,Hono middleware
+Sprint 2,Authentication,Email/password auth,SYSTEM,HIGH,Supabase auth
+Sprint 2,Authentication,Session management,SYSTEM,HIGH,Secure cookie
+Sprint 2,Authentication,Password reset flow,SYSTEM,MEDIUM,Email link
+Sprint 2,Tenant,Organization table,SYSTEM,HIGH,Internal department support
+Sprint 2,Tenant,Tenant onboarding,SYSTEM,HIGH,Owner creation
+Sprint 2,Tenant,Role-based access control,SYSTEM,HIGH,Owner/Admin/HR/Finance
+Sprint 3,HR Core,Employee table & profile,SYSTEM,HIGH,Staff & teacher
+Sprint 3,HR Core,Department management,ADMIN,HIGH,Org structure
+Sprint 3,HR Core,Position & salary grade,SYSTEM,HIGH,Payroll base
+Sprint 3,HR Core,Employment contract record,ADMIN,MEDIUM,Join date, status
+Sprint 3,HR Core,Employee document storage,ADMIN,MEDIUM,Contracts, ID
+Sprint 4,Attendance,Attendance check-in module,SYSTEM,HIGH,Manual + QR option
+Sprint 4,Attendance,Attendance check-out module,SYSTEM,HIGH,Time tracking
+Sprint 4,Attendance,Attendance correction workflow,ADMIN,MEDIUM,Approval required
+Sprint 4,Attendance,Work schedule configuration,ADMIN,HIGH,Shift based
+Sprint 4,Attendance,Leave management,SYSTEM,HIGH,Sick/annual leave
+Sprint 4,Attendance,Attendance report,SYSTEM,HIGH,Monthly summary
+Sprint 5,Payroll,Payroll rules engine,SYSTEM,HIGH,Salary calculation
+Sprint 5,Payroll,Allowance configuration,ADMIN,HIGH,Transport, etc
+Sprint 5,Payroll,Deduction configuration,ADMIN,HIGH,Penalty, absence
+Sprint 5,Payroll,Automatic payroll generation,SYSTEM,HIGH,Per period
+Sprint 5,Payroll,Payslip generator,SYSTEM,HIGH,PDF export
+Sprint 5,Payroll,Payroll approval workflow,ADMIN,HIGH,Finance approval
+Sprint 5,Payroll,Payroll history,SYSTEM,HIGH,Immutable records
+Sprint 6,Finance,Expense category module,ADMIN,HIGH,Operational cost
+Sprint 6,Finance,Expense record module,ADMIN,HIGH,Manual entry
+Sprint 6,Finance,Budget tracking,SYSTEM,MEDIUM,Department budget
+Sprint 6,Finance,Financial summary dashboard,ADMIN,HIGH,Monthly view
+Sprint 7,Inventory,Inventory item master,ADMIN,HIGH,Asset database
+Sprint 7,Inventory,Stock in/out transaction,ADMIN,HIGH,Movement log
+Sprint 7,Inventory,Asset assignment to employee,ADMIN,HIGH,Laptop etc
+Sprint 7,Inventory,Low stock alert,SYSTEM,MEDIUM,Threshold based
+Sprint 7,Inventory,Inventory audit log,SYSTEM,HIGH,Traceability
+Sprint 8,Reporting,Employee analytics dashboard,ADMIN,HIGH,Attendance stats
+Sprint 8,Reporting,Payroll analytics dashboard,ADMIN,HIGH,Salary trends
+Sprint 8,Reporting,Inventory analytics,SYSTEM,MEDIUM,Usage stats
+Sprint 8,Reporting,Export CSV reports,SYSTEM,HIGH,Admin reports
+Sprint 8,Reporting,Export PDF reports,SYSTEM,HIGH,Formal reports
+Sprint 9,Notification,Email notification service,SYSTEM,HIGH,Payroll ready
+Sprint 9,Notification,WhatsApp notification,SYSTEM,HIGH,Reminder
+Sprint 9,Notification,In-app notification center,SYSTEM,MEDIUM,UI module
+Sprint 10,Security,Audit log system,SYSTEM,HIGH,All actions tracked
+Sprint 10,Security,Permission enforcement test,SYSTEM,HIGH,RBAC validation
+Sprint 10,Security,Backup & restore mechanism,SYSTEM,HIGH,Automated
+Sprint 10,Security,Data retention policy,SYSTEM,MEDIUM,Archive strategy
+Sprint 11,System Automation,Feature flag system,SYSTEM,MEDIUM,Enable modules
+Sprint 11,System Automation,API rate limiting,SYSTEM,MEDIUM,Prevent abuse
+Sprint 11,System Automation,Task scheduler,SYSTEM,HIGH,Payroll cron
+Sprint 11,System Automation,Webhook event system,SYSTEM,MEDIUM,Integration ready
+Sprint 12,DevOps,Dockerfile optimization automation,SYSTEM,HIGH,Use analyzer
+Sprint 12,DevOps,CI/CD pipeline,SYSTEM,HIGH,Build deploy
+Sprint 12,DevOps,Monitoring & logging,SYSTEM,HIGH,System health
+Sprint 12,DevOps,Environment promotion flow,SYSTEM,MEDIUM,Dev → Prod
+Sprint 13,Admin Tools,System settings panel,ADMIN,HIGH,Configurable
+Sprint 13,Admin Tools,User activity dashboard,ADMIN,MEDIUM,Usage metrics
+Sprint 13,Admin Tools,Address book module,ADMIN,MEDIUM,Internal contacts
+Sprint 13,Admin Tools,Data import tool,SYSTEM,MEDIUM,CSV upload
+Sprint 14,Integration,Public API,SYSTEM,LOW,Future ERP ecosystem
+Sprint 14,Integration,External webhook handler,SYSTEM,LOW,Automation
+Sprint 14,Integration,SSO integration,SYSTEM,LOW,Enterprise readiness

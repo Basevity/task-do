@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fafaf9;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+/* Hide scrollbar but keep scroll */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.task-details-markdown p { margin: 0.5em 0; }
+.task-details-markdown p:first-child { margin-top: 0; }
+.task-details-markdown ul, .task-details-markdown ol { margin: 0.5em 0; padding-left: 1.5em; }
+.task-details-markdown li { margin: 0.25em 0; }
+.task-details-markdown h1, .task-details-markdown h2, .task-details-markdown h3 { margin: 0.75em 0 0.35em; font-weight: 600; }
+.task-details-markdown h1 { font-size: 1.25em; }
+.task-details-markdown h2 { font-size: 1.1em; }
+.task-details-markdown h3 { font-size: 1em; }
+.task-details-markdown strong { font-weight: 600; }
+.task-details-markdown code { background: #e7e5e4; padding: 0.1em 0.3em; font-size: 0.9em; }
+.task-details-markdown pre { margin: 0.5em 0; padding: 0.75em; background: #e7e5e4; overflow-x: auto; }
+.task-details-markdown pre code { background: none; padding: 0; }
+
+/* Quill: single border around editor; no double borders from wrapper + snow theme */
+.quill-custom {
+  border: 1px solid #e7e5e4;
+}
+.quill-custom .ql-toolbar.ql-snow {
+  border: none;
+  border-bottom: 1px solid #e7e5e4;
+}
+.quill-custom .ql-container.ql-snow {
+  border: none;
+}
+.quill-custom .quill-editor-area {
+  min-height: 120px;
+  padding: 10px 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1c1917;
+}
+.quill-custom .ql-editor {
+  padding: 0;
+  min-height: 100px;
+}
+.quill-custom .ql-editor.ql-blank::before {
+  color: #a8a29e;
+  font-style: normal;
+}
+/* Quill link tooltip: ensure visible in modals and above other content */
+.quill-custom .ql-tooltip {
+  z-index: 60;
+}
+
+/* Task description view mode (read-only, no toolbar) */
+.task-description-view {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #44403c;
+}
+.task-description-view p { margin: 0 0 0.75em; }
+.task-description-view p:last-child { margin-bottom: 0; }
+.task-description-view ul, .task-description-view ol { margin: 0 0 0.75em; padding-left: 1.5em; }
+.task-description-view li { margin: 0.25em 0; }
+.task-description-view strong { font-weight: 600; }
+.task-description-view a { color: #b45309; text-decoration: underline; }
+.task-description-view h1, .task-description-view h2, .task-description-view h3 { margin: 1em 0 0.35em; font-weight: 600; }
+.task-description-view h1 { font-size: 1.5em; }
+.task-description-view h2 { font-size: 1.25em; }
+.task-description-view h3 { font-size: 1.1em; }
+.task-description-view .ql-size-small { font-size: 0.75em; }
+.task-description-view .ql-size-large { font-size: 1.5em; }
+.task-description-view .ql-size-huge { font-size: 2em; }
+.task-description-view-empty { color: #a8a29e; font-style: italic; }
