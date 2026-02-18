@@ -150,7 +150,7 @@ export function TaskDetailsModal({
     if (editor && !editor.isDestroyed) {
       const incoming = task.description ?? "";
       if (editor.getHTML() !== incoming) {
-        editor.commands.setContent(incoming, false);
+        editor.commands.setContent(incoming, { emitUpdate: false });
       }
     }
   }, [task.description, editor]);
